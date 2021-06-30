@@ -47,8 +47,8 @@ TEnv::IntVar FrameDisplayStyleInXsheetRowArea(
 //=============================================================================
 namespace XsheetGUI {
 //-----------------------------------------------------------------------------
-
-const int ColumnWidth     = 74;
+int ColumnWidthMultiplier = 1.5; //todo
+const int ColumnWidth     = 50 * ColumnWidthMultiplier; //todo:  add width multiplier to Preferences
 const int RowHeight       = 20;
 const int SCROLLBAR_WIDTH = 16;
 const int TOOLBAR_HEIGHT  = 29;
